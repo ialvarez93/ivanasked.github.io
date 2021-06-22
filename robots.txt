@@ -1,0 +1,4 @@
+Sitemap: https://ivanovertime.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: ivanovertime.github.io
