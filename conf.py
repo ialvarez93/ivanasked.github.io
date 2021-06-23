@@ -159,7 +159,7 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "bootblog4"
+THEME = "jidn"
 
 # A theme color. In default themes, it might be displayed by some browsers as
 # the browser UI color (eg. Chrome on Android). Other themes might also use it
@@ -1408,7 +1408,23 @@ WARN_ABOUT_TAG_METADATA = False
 # It can be anything, data, functions, modules, etc.
 
 GLOBAL_CONTEXT = {
-    'utterances_config': {"issue-term": "title", "label": "Comments", "theme": "github-light", "crossorigin": "anonymous"}
+    'utterances_config': {"issue-term": "title", "label": "Comments", "theme": "github-light", "crossorigin": "anonymous"},
+    "JIDN": {BLOG_AUTHOR: {   # Or "Given Surname" for alternate authors
+        "image": "https://avatars.githubusercontent.com/u/20419834?v=4",
+
+        ## The following are all individually optional
+        "email": BLOG_EMAIL,  # or something else for alternate authors
+        "bio": """I don't know what I'm doing.""",
+        "map": "Naguanagua, Carabobo, Venezuela",
+        "social": (
+            "https://twitter.com/ivanovertime",
+            "https://github.com/ivanovertime",
+            # You get the idea
+        )
+    }
+        # Add any needed alternate authors
+    },  # Extra info about authors
+    "JIDN-theme": "theme-base-blue",
 }
 
 # Add functions here and they will be called with template
