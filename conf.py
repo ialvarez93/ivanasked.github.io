@@ -17,7 +17,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Ivan Alvarez"  # (translatable)
-BLOG_TITLE = "Ivan Over Time"  # (translatable)
+BLOG_TITLE = "Ivan / Time"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://ivanovertime.github.io/"
@@ -139,11 +139,17 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/index.html", " 🏡 Home"),
-        ("/blog/", "📖 Blog"),
-        ("/archive.html", " 📑Timeline"),
+        #("/index.html", "🏡 Home"),
+        ("/archive.html", "📑Timeline"),
         ("/categories/", "🔖 Tags"),
         ("/rss.xml", "📡 RSS feed"),
+        # ('/index.html', 'Home', 'fa fa-home'),
+        # ('/archive.html', 'Archives', 'fa fa-folder-open'),
+        # ('/categories/index.html', 'Tags', 'fa fa-tags'),
+        # ('/rss.xml', 'RSS', 'fa fa-feed'),
+        # ('https://getnikola.com', 'About me', 'fa fa-user'),
+        # ('https://twitter.com/getnikola', 'My Twitter', 'fa fa-twitter'),
+        # ('https://github.com/getnikola', 'My Github', 'fa fa-github'),
     ),
 
     "es": (
@@ -161,7 +167,7 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "jidn"
+THEME = "hyde"
 
 # A theme color. In default themes, it might be displayed by some browsers as
 # the browser UI color (eg. Chrome on Android). Other themes might also use it
@@ -178,19 +184,21 @@ THEME = "jidn"
 # Config for bootblog4:
 THEME_CONFIG = {
     DEFAULT_LANG: {
-        # Show the latest featured post in a large box, with the previewimage as its background.
-        'featured_large': False,
-        # Show the first (remaining) two featured posts in small boxes.
-        'featured_small': False,
-        # Show featured posts on mobile.
-        'featured_on_mobile': True,
-        # Show image in `featured_large` on mobile.
-        # `featured_small` displays them only on desktop.
-        'featured_large_image_on_mobile': True,
-        # Strip HTML from featured post text.
-        'featured_strip_html': False,
-        # Contents of the sidebar, If empty, the sidebar is not displayed.
-        'sidebar': ''
+        # "hyde_subtheme": "theme-custom",
+        # "hyde_subtheme": "theme-base-08", # red
+        # "hyde_subtheme": "theme-base-09", # orange
+        # "hyde_subtheme": "theme-base-0a", # yellow
+        #"hyde_subtheme": "theme-base-0b",  # green
+        # "hyde_subtheme": "theme-base-0c", # cyan
+        # "hyde_subtheme": "theme-base-0d", # blue
+        # "hyde_subtheme": "theme-base-0e", # magenta
+        "hyde_subtheme": "theme-base-0f",  # brown
+        # show title and description
+        #"sidebar_title": True,
+        # show navigation links as icon or text
+        # leave commented to show both
+        # "navigation": "text",
+        # "navigation": "icon",
     }
 }
 # Config for bootstrap4:
@@ -241,11 +249,11 @@ THEME_CONFIG = {
 #     )
 
 POSTS = (
-    ("posts/*.rst", "blog", "post.tmpl"),
-    ("posts/*.md", "blog", "post.tmpl"),
-    ("posts/*.txt", "blog", "post.tmpl"),
-    ("posts/*.html", "blog", "post.tmpl"),
-    ("posts/*.ipynb", "blog", "post.tmpl"),
+    ("posts/*.rst", "posts", "post.tmpl"),
+    ("posts/*.md", "posts", "post.tmpl"),
+    ("posts/*.txt", "posts", "post.tmpl"),
+    ("posts/*.html", "posts", "post.tmpl"),
+    ("posts/*.ipynb", "posts", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.rst", "pages", "page.tmpl"),
@@ -290,7 +298,7 @@ TIMEZONE = "America/Caracas"
 # 2 = using a string like “2 days ago” (JS, using Luxon)
 #
 # Your theme must support it, Bootstrap already does.
-# DATE_FANCINESS = 0
+DATE_FANCINESS = 2
 
 # Customize the locale/region used for a language.
 # For example, to use British instead of US English: LOCALES = {'en': 'en_GB'}
@@ -975,6 +983,7 @@ FEED_LINKS_APPEND_QUERY = False
 # (translatable)
 LICENSE = """
 <div class="text-center">
+    <br>
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
 </div>
 """
@@ -988,7 +997,7 @@ LICENSE = """
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = '{license} Made by <a href="mailto:{email}">{author}</a> in {date} with <a href="https://getnikola.com" rel="nofollow">Nikola</a> and ☕'
+CONTENT_FOOTER = 'Made by <a href="mailto:{email}">{author}</a> in {date} with <a href="https://getnikola.com" rel="nofollow">Nikola</a> and ☕ {license}'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
@@ -1269,7 +1278,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code',
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-EXTRA_HEAD_DATA = '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">'
+# EXTRA_HEAD_DATA = '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">'
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)

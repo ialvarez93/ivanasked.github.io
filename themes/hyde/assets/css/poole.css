@@ -427,13 +427,13 @@ a.pagination-item:hover {
   padding: 5px;
 
   height: auto;
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: middle;
 }
 
 /* Pagination items can be `span`s or `a`s */
 .tag {
-  display: block;
+  /* display: block; */
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 4px;
