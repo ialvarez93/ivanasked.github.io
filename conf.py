@@ -139,13 +139,15 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/archive.html", "Archive"),
-        ("/categories/", "Tags"),
-        ("/rss.xml", "RSS feed"),
+        ("/index.html", " 🏡 Home"),
+        ("/blog/", "📖 Blog"),
+        ("/archive.html", " 📑Timeline"),
+        ("/categories/", "🔖 Tags"),
+        ("/rss.xml", "📡 RSS feed"),
     ),
 
     "es": (
-        ("/es/archive.html", "Archivo"),
+        ("/es/archive.html", "Línea de tiempo"),
         ("/es/categories/", "Etiquetas"),
         ("/es/rss.xml", "Canal RSS"),
     ),
@@ -164,7 +166,7 @@ THEME = "jidn"
 # A theme color. In default themes, it might be displayed by some browsers as
 # the browser UI color (eg. Chrome on Android). Other themes might also use it
 # as an accent color (the default ones don’t). Must be a HEX value.
-THEME_COLOR = '#5670d4'
+# THEME_COLOR = '#5670d4'
 
 # Theme configuration. Fully theme-dependent. (translatable)
 # Samples for bootblog4 (enabled) and bootstrap4 (commented) follow.
@@ -239,20 +241,19 @@ THEME_CONFIG = {
 #     )
 
 POSTS = (
-    ("posts/*.rst", "posts", "post.tmpl"),
-    ("posts/*.md", "posts", "post.tmpl"),
-    ("posts/*.ipynb", "posts", "post.tmpl"),
-    ("posts/*.txt", "posts", "post.tmpl"),
-    ("posts/*.html", "posts", "post.tmpl"),
+    ("posts/*.rst", "blog", "post.tmpl"),
+    ("posts/*.md", "blog", "post.tmpl"),
+    ("posts/*.txt", "blog", "post.tmpl"),
+    ("posts/*.html", "blog", "post.tmpl"),
+    ("posts/*.ipynb", "blog", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.rst", "pages", "page.tmpl"),
     ("pages/*.md", "pages", "page.tmpl"),
-    ("pages/*.ipynb", "pages", "page.tmpl"),
     ("pages/*.txt", "pages", "page.tmpl"),
     ("pages/*.html", "pages", "page.tmpl"),
+    ("pages/*.ipynb", "pages", "page.tmpl"),
 )
-
 
 # Below this point, everything is optional
 
@@ -972,7 +973,11 @@ FEED_LINKS_APPEND_QUERY = False
 
 # A HTML fragment describing the license, for the sidebar.
 # (translatable)
-LICENSE = ""
+LICENSE = """
+<div class="text-center">
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+</div>
+"""
 # I recommend using the Creative Commons' wizard:
 # https://creativecommons.org/choose/
 # LICENSE = """
@@ -983,7 +988,7 @@ LICENSE = ""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
+CONTENT_FOOTER = '{license} Made by <a href="mailto:{email}">{author}</a> in {date} with <a href="https://getnikola.com" rel="nofollow">Nikola</a> and ☕'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
@@ -1264,7 +1269,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code',
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-# EXTRA_HEAD_DATA = ""
+EXTRA_HEAD_DATA = '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">'
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
@@ -1412,7 +1417,7 @@ GLOBAL_CONTEXT = {
     "JIDN": {BLOG_AUTHOR: {   # Or "Given Surname" for alternate authors
         "image": "https://avatars.githubusercontent.com/u/20419834?v=4",
 
-        ## The following are all individually optional
+        # The following are all individually optional
         "email": BLOG_EMAIL,  # or something else for alternate authors
         "bio": """I don't know what I'm doing.""",
         "map": "Naguanagua, Carabobo, Venezuela",
@@ -1424,7 +1429,6 @@ GLOBAL_CONTEXT = {
     }
         # Add any needed alternate authors
     },  # Extra info about authors
-    "JIDN-theme": "theme-base-blue",
 }
 
 # Add functions here and they will be called with template
