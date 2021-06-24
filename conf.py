@@ -17,7 +17,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Ivan Alvarez"  # (translatable)
-BLOG_TITLE = "Ivan / Time"  # (translatable)
+BLOG_TITLE = "Ivan Over Time"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://ivanovertime.github.io/"
@@ -25,7 +25,7 @@ SITE_URL = "https://ivanovertime.github.io/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://ivanovertime.github.io/"
 BLOG_EMAIL = "ivalvarez22@gmail.com"
-BLOG_DESCRIPTION = "This a site about Ivan over time."  # (translatable)
+BLOG_DESCRIPTION = "Hi! I'm Ivan and this site is about what I do over time."  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -140,22 +140,18 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         #("/index.html", "🏡 Home"),
-        ("/archive.html", "📑Timeline"),
+        ("/archive.html", "📑 Timeline"),
         ("/categories/", "🔖 Tags"),
         ("/rss.xml", "📡 RSS feed"),
-        # ('/index.html', 'Home', 'fa fa-home'),
-        # ('/archive.html', 'Archives', 'fa fa-folder-open'),
-        # ('/categories/index.html', 'Tags', 'fa fa-tags'),
-        # ('/rss.xml', 'RSS', 'fa fa-feed'),
         # ('https://getnikola.com', 'About me', 'fa fa-user'),
         # ('https://twitter.com/getnikola', 'My Twitter', 'fa fa-twitter'),
         # ('https://github.com/getnikola', 'My Github', 'fa fa-github'),
     ),
 
     "es": (
-        ("/es/archive.html", "Línea de tiempo"),
-        ("/es/categories/", "Etiquetas"),
-        ("/es/rss.xml", "Canal RSS"),
+        ("/es/archive.html", "📑 Línea de tiempo"),
+        ("/es/categories/", "🔖 Etiquetas"),
+        ("/es/rss.xml", "📡 Canal RSS"),
     ),
 }
 
@@ -192,7 +188,7 @@ THEME_CONFIG = {
         # "hyde_subtheme": "theme-base-0c", # cyan
         # "hyde_subtheme": "theme-base-0d", # blue
         # "hyde_subtheme": "theme-base-0e", # magenta
-        "hyde_subtheme": "theme-base-0f",  # brown
+        #"hyde_subtheme": "theme-base-0f",  # brown
         # show title and description
         #"sidebar_title": True,
         # show navigation links as icon or text
@@ -253,7 +249,7 @@ POSTS = (
     ("posts/*.md", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
-    ("posts/*.ipynb", "posts", "post.tmpl"),
+    ("posts/*.ipynb", "datalog", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.rst", "pages", "page.tmpl"),
@@ -997,7 +993,7 @@ LICENSE = """
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Made by <a href="mailto:{email}">{author}</a> in {date} with <a href="https://getnikola.com" rel="nofollow">Nikola</a> and ☕ {license}'
+CONTENT_FOOTER = 'Made in {date} with <a href="https://getnikola.com" rel="nofollow">Nikola</a> and ☕ {license}'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
@@ -1422,22 +1418,7 @@ WARN_ABOUT_TAG_METADATA = False
 # It can be anything, data, functions, modules, etc.
 
 GLOBAL_CONTEXT = {
-    'utterances_config': {"issue-term": "title", "label": "Comments", "theme": "github-light", "crossorigin": "anonymous"},
-    "JIDN": {BLOG_AUTHOR: {   # Or "Given Surname" for alternate authors
-        "image": "https://avatars.githubusercontent.com/u/20419834?v=4",
-
-        # The following are all individually optional
-        "email": BLOG_EMAIL,  # or something else for alternate authors
-        "bio": """I don't know what I'm doing.""",
-        "map": "Naguanagua, Carabobo, Venezuela",
-        "social": (
-            "https://twitter.com/ivanovertime",
-            "https://github.com/ivanovertime",
-            # You get the idea
-        )
-    }
-        # Add any needed alternate authors
-    },  # Extra info about authors
+    'utterances_config': {"issue-term": "title", "label": "Comments", "theme": "github-light", "crossorigin": "anonymous"}
 }
 
 # Add functions here and they will be called with template
