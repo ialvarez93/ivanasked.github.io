@@ -43,5 +43,3 @@ How?
 Well, this blog is built with `Nikola <http://getnikola.com/>`_ with the `Hack theme <https://themes.getnikola.com/v8/hack/>`_ slightly tweaked. 
 
 I'll do a guide on making one in the near future, in the mean time check `this guide <https://jiaweizhuang.github.io/blog/nikola-guide/>`_  for more info, it helped me a lot.
-
-

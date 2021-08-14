@@ -17,7 +17,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Ivan Alvarez"  # (translatable)
-BLOG_TITLE = "Ivan / Time"  # (translatable)
+BLOG_TITLE = {"en": "Ivan / Time", "es": "Ivan / Tiempo", "ja": "イワン / 時間"}  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://ivanovertime.github.io/"
