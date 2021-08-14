@@ -10,12 +10,12 @@
 Hello there!
 ############
 
-I'm Ivan and this site is about what I do over time. Thanks for stopping by.
+Thanks for stopping by. I'm Ivan Alvarez and this site is about what I do over time. 
 
 Who am I anyways?
 ******************
 
-That's a very philosophical question. My name is Ivan Alvarez, I'm a software developer from (and currently at) Venezuela. I really like learning new technologies, languages (Japanese I'm coming for you!) and many other things, so this blog is an outlet for that. Also, I'm available for hire, `let me know <ivalvarez22@gmail.com>`_  if you are interested in working together. 
+That's a very philosophical question. I'm a software developer from (and currently at) Venezuela. I really like learning new technologies, languages (Japanese I'm coming for you!) and many other things, so this blog is an outlet for that. Also, I'm available for hire, `let me know <ivalvarez22@gmail.com>`_  if you are interested in working together. 
 
 What's with the name?
 *********************
