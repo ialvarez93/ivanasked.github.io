@@ -17,14 +17,14 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Ivan Alvarez"  # (translatable)
-BLOG_TITLE = {"en": "Ivan / Time", "es": "Ivan / Tiempo", "ja": "イワン / 時間"}  # (translatable)
+BLOG_TITLE = {"en": "Ivan Asked", "es": "Ivan Prenguntó", "ja": "イワンは尋ねた"}  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://ivanovertime.github.io/"
+SITE_URL = "https://ivanasked.github.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "https://ivanovertime.github.io/"
-BLOG_EMAIL = "ivalvarez22@gmail.com"
+# BASE_URL = "https://ivanasked.github.io/"
+BLOG_EMAIL = "ivanasked@gmail.com"
 # (translatable)
 BLOG_DESCRIPTION = "Hello there! I'm Ivan and this site is about what I do over time."
 
@@ -141,7 +141,7 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/archive.html", "Timeline"),
+        ("/archive.html", "Questions"),
         ("/categories/", "Tags"),
         ("/pages/about/index.html", "About"),
         ("/rss.xml", "RSS"),
@@ -151,7 +151,7 @@ NAVIGATION_LINKS = {
     ),
 
     "es": (
-        ("/es/archive.html", "Línea de tiempo"),
+        ("/es/archive.html", "Preguntas"),
         ("/es/categories/", "Etiquetas"),
         ("/es/rss.xml", "RSS"),
     ),
