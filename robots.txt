@@ -1,4 +1,4 @@
-Sitemap: https://ivanovertime.github.io/sitemapindex.xml
+Sitemap: https://ivanasked.github.io/sitemapindex.xml
 
 User-Agent: *
-Host: ivanovertime.github.io
+Host: ivanasked.github.io
