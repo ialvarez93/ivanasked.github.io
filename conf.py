@@ -1035,7 +1035,7 @@ COMMENT_SYSTEM = "utterances"
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
 # is in the manual.
-COMMENT_SYSTEM_ID = "ivanovertime/ivanovertime.github.io"
+COMMENT_SYSTEM_ID = "ivanasked/ivanasked.github.io"
 
 # Create index.html for page folders?
 # WARNING: if a page would conflict with the index file (usually
