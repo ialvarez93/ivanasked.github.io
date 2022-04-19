@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>イワンは尋ねた</title><link>https://ivanasked.github.io/</link><description>Hello there! I'm Ivan and this site is about what I do over time.</description><atom:link href="https://ivanasked.github.io/ja/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>ja</language><copyright>Contents © 2022 &lt;a href="mailto:ivanasked@gmail.com"&gt;Ivan Alvarez&lt;/a&gt; 
     &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /&gt;&lt;/a&gt;
-</copyright><lastBuildDate>Sat, 16 Apr 2022 01:23:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Origins</title><link>https://ivanasked.github.io/ja/posts/origins/</link><dc:creator>Ivan Alvarez</dc:creator><description>&lt;img alt="https://images.unsplash.com/photo-1603261034174-bbaa73627617?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;ixlib=rb-1.2.1&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=1050&amp;amp;q=80" src="https://images.unsplash.com/photo-1603261034174-bbaa73627617?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;ixlib=rb-1.2.1&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=1050&amp;amp;q=80"&gt;
+</copyright><lastBuildDate>Tue, 19 Apr 2022 01:12:07 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Does one really need a blog? </title><link>https://ivanasked.github.io/ja/posts/origins/</link><dc:creator>Ivan Alvarez</dc:creator><description>&lt;img alt="https://images.unsplash.com/photo-1603261034174-bbaa73627617?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;ixlib=rb-1.2.1&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=1050&amp;amp;q=80" src="https://images.unsplash.com/photo-1603261034174-bbaa73627617?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;ixlib=rb-1.2.1&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=1050&amp;amp;q=80"&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://unsplash.com/@israelgil?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Photo credits&lt;/a&gt;&lt;/p&gt;
 &lt;section id="why-a-blog"&gt;
 &lt;h2&gt;Why a blog?&lt;/h2&gt;
-&lt;p&gt;Well, as the saying goes, “the shoemaker’s son always goes barefoot”. &lt;a class="reference external" href="https://www.swyx.io/learn-in-public/"&gt;Learning in public&lt;/a&gt; its not only much more effective and efficient, but with the added benefit of accountability and the possibility of contributing to a community &lt;a class="reference external" href="https://hackernoon.com/the-importance-of-developer-communities-adv3u0u"&gt;it's a healthy choice&lt;/a&gt; . But you need a platform for that and since I really want to be focused, SNS are out of the map (between you and me, dev.to gives me FOMO every 5 minutes, makes me really anxious, or both!) So I had to borrow and use the tools to make my humble space in this little corner over here.&lt;/p&gt;
+&lt;p&gt;Well, as the saying goes, “the shoemaker’s son always goes barefoot”. &lt;a class="reference external" href="https://www.swyx.io/learn-in-public/"&gt;Learning in public&lt;/a&gt; It's not only much more effective and efficient, but with the added benefit of accountability and the possibility of contributing to a community &lt;a class="reference external" href="https://hackernoon.com/the-importance-of-developer-communities-adv3u0u"&gt;it's a healthy choice&lt;/a&gt;. But you need a platform for that and since I really want to be focused, SNS are out of the map (between you and me, dev.to gives me FOMO every 5 minutes, makes me really anxious, or both!) So I had to borrow and use the tools to make my humble space in this little corner over here.&lt;/p&gt;
 &lt;section id="what-are-the-requirements"&gt;
 &lt;h3&gt;What are the requirements?&lt;/h3&gt;
-&lt;p&gt;After I got my HDD killed by a blackout (and probably old age if I'm being honest), I got an even older HDD as a replacement and I've been doing some tutorials, so here (hopefully) I'll be putting side projects of data science/engineering and my thoughts and tips, especially for my fellows devs in Venezuela. So I choose you Nikola!&lt;/p&gt;
+&lt;p&gt;After I got my HDD killed by a blackout (and probably old age if I'm being honest), I got an even older HDD as a replacement, and I've been doing some tutorials, so here (hopefully) I'll be putting side projects of data science/engineering and my thoughts and tips, especially for my fellows devs in Venezuela. So I choose you Nikola!&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section id="why-nikola"&gt;
@@ -17,13 +17,13 @@
 &lt;li&gt;&lt;p&gt;I think that I might &lt;em&gt;get&lt;/em&gt; the code base, and by that I mean:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;Mostly very well documented. OK, no, It's really well documented.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;It's written in python, so I don't have to venture too far of my learning range.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It's written in python, so I don't have to venture too far from my learning range.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;It has an active and good community, which I would like to be a part of, eventually.&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;Every page can be downloaded if you click the pretty button that says &lt;a class="reference external" href="http://ivanovertime.github.io/posts/origins/index.rst"&gt;Source&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;That's a ready made cheat sheet for you! Wonderful!&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;That's a ready-made cheat sheet for you! Wonderful!&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Supports every format I would want to use as an input, even some that I might find questionable like .doc.&lt;/p&gt;
@@ -34,5 +34,5 @@
 &lt;/ol&gt;
 &lt;p&gt;I still need to fix the mobile version, but I'm starting anyway (Sorry about the navbar). So, well with this out of the way. The blog it's officially open! Mandatory Hello world code:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://ivanasked.github.io/listings/hello.py.html"&gt;hello.py&lt;/a&gt;  &lt;a class="reference external" href="https://ivanasked.github.io/listings/hello.py"&gt;(Source)&lt;/a&gt;&lt;/p&gt;
-&lt;pre class="code python"&gt;&lt;a id="rest_code_24f1da0398a74936a94d664ee4c218f6-1" name="rest_code_24f1da0398a74936a94d664ee4c218f6-1" href="https://ivanasked.github.io/ja/posts/origins/#rest_code_24f1da0398a74936a94d664ee4c218f6-1"&gt;&lt;/a&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Hi mom!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;pre class="code python"&gt;&lt;a id="rest_code_ea51271f767b4380b70ef8956c8b9e48-1" name="rest_code_ea51271f767b4380b70ef8956c8b9e48-1" href="https://ivanasked.github.io/ja/posts/origins/#rest_code_ea51271f767b4380b70ef8956c8b9e48-1"&gt;&lt;/a&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Hi mom!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/section&gt;</description><guid>https://ivanasked.github.io/ja/posts/origins/</guid><pubDate>Thu, 12 Aug 2021 16:30:05 GMT</pubDate></item></channel></rss>
