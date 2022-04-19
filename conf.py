@@ -319,7 +319,10 @@ DATE_FANCINESS = 2
 # Feel free to add or delete extensions to any list, but don't add any new
 # compilers unless you write the interface for it yourself.
 #
-# The default compiler for `new_post` is the first entry in the POSTS tuple.
+# The default compiler for `new_post` iings from 'listings' into 'output/listings'
+
+# A mapping of languages to file-extensions that represent that language.
+# Feel free to add or delete s the first entry in the POSTS tuple.
 #
 # 'rest' is reStructuredText
 # 'markdown' is Markdown
@@ -372,7 +375,10 @@ COMPILERS = {
 # untranslated posts.
 # If this is set to False, then posts that are not translated to a language
 # LANG will not be visible at all in the pages in that language.
-# SHOW_UNTRANSLATED_POSTS = True
+# SHOW_UNTRANSLATED_POSTS = Trueings from 'listings' into 'output/listings'
+
+# A mapping of languages to file-extensions that represent that language.
+# Feel free to add or delete 
 
 # Nikola supports logo display.  If you have one, you can put the URL here.
 # Final output is <img src="LOGO_URL" id="logo" alt="BLOG_TITLE">.
