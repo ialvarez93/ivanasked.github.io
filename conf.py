@@ -17,7 +17,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Ivan Alvarez"  # (translatable)
-BLOG_TITLE = {"en": "Ivan Asked", "es": "Ivan Prenguntó", "ja": "イワンは尋ねた"}  # (translatable)
+BLOG_TITLE = {"en": "Ivan Asked", "es": "Ivan Prenguntó"}  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://ivanasked.github.io/"
@@ -26,7 +26,7 @@ SITE_URL = "https://ivanasked.github.io/"
 # BASE_URL = "https://ivanasked.github.io/"
 BLOG_EMAIL = "ivanasked@gmail.com"
 # (translatable)
-BLOG_DESCRIPTION = "Hello there! I'm Ivan and this site is about what I do over time."
+BLOG_DESCRIPTION = "Hello there! I'm Ivan and this are question I got about education and life in general as an Information Engineer."
 
 # Nikola is multilingual!
 #
@@ -100,8 +100,7 @@ DEFAULT_LANG = "en"
 # the path will be used as a prefix for the generated pages location
 TRANSLATIONS = {
     DEFAULT_LANG: "",
-    "es": "./es",
-    "ja": "./ja",
+    "es": "./es"    
 }
 
 # What will translated input files be named like?
@@ -186,13 +185,13 @@ THEME_CONFIG = {
         # "hyde_subtheme": "theme-base-08", # red
         # "hyde_subtheme": "theme-base-09", # orange
         # "hyde_subtheme": "theme-base-0a", # yellow
-        #"hyde_subtheme": "theme-base-0b",  # green
+        # "hyde_subtheme": "theme-base-0b",  # green
         # "hyde_subtheme": "theme-base-0c", # cyan
         # "hyde_subtheme": "theme-base-0d", # blue
         # "hyde_subtheme": "theme-base-0e", # magenta
-        #"hyde_subtheme": "theme-base-0f",  # brown
+        # "hyde_subtheme": "theme-base-0f",  # brown
         # show title and description
-        #"sidebar_title": True,
+        # "sidebar_title": True,
         # show navigation links as icon or text
         # leave commented to show both
         # "navigation": "text",
@@ -253,6 +252,7 @@ POSTS = (
     ("posts/*.txt", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
     ("posts/*.ipynb", "posts", "post.tmpl"),
+    ("posts/*.org", "posts", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.rst", "pages", "page.tmpl"),
@@ -260,6 +260,7 @@ PAGES = (
     ("pages/*.txt", "pages", "page.tmpl"),
     ("pages/*.html", "pages", "page.tmpl"),
     ("pages/*.ipynb", "pages", "page.tmpl"),
+    ("pages/*.org", "pages", "page.tmpl"),
 )
 
 # Below this point, everything is optional
@@ -329,7 +330,7 @@ DATE_FANCINESS = 2
 # 'html' assumes the file is HTML and just copies it
 COMPILERS = {
     "rest": ['.rst', '.txt'],
-    "markdown": ['.md', '.mdown', '.markdown'],
+    #"markdown": ['.md', '.mdown', '.markdown'],
     "textile": ['.textile'],
     "txt2tags": ['.t2t'],
     "bbcode": ['.bb'],
@@ -339,11 +340,12 @@ COMPILERS = {
     # PHP files are rendered the usual way (i.e. with the full templates).
     # The resulting files have .php extensions, making it possible to run
     # them without reconfiguring your server to recognize them.
-    "php": ['.php'],
+    #"php": ['.php'],
     # Pandoc detects the input from the source filename
     # but is disabled by default as it would conflict
     # with many of the others.
-    # "pandoc": ['.rst', '.md', '.txt'],
+    "pandoc": ['.md', '.mdown', '.markdown'],
+    "orgmode": ['.org']
 }
 
 # Enable reST directives that insert the contents of external files such
@@ -353,23 +355,23 @@ COMPILERS = {
 
 # Create by default posts in one file format?
 # Set to False for two-file posts, with separate metadata.
-# ONE_FILE_POSTS = True
+# ONE_FILE_POSTS = False
 
 # Preferred metadata format for new posts
 # "Nikola": reST comments, wrapped in a HTML comment if needed (default)
 # "YAML": YAML wrapped in "---"
 # "TOML": TOML wrapped in "+++"
 # "Pelican": Native markdown metadata or reST docinfo fields. Nikola style for other formats.
-# METADATA_FORMAT = "Nikola"
+METADATA_FORMAT = "YAML"
 
 # Use date-based path when creating posts?
 # Can be enabled on a per-post basis with `nikola new_post -d`.
 # The setting is ignored when creating pages.
-# NEW_POST_DATE_PATH = False
+NEW_POST_DATE_PATH = True
 
 # What format to use when creating posts with date paths?
 # Default is '%Y/%m/%d', other possibilities include '%Y' or '%Y/%m'.
-# NEW_POST_DATE_PATH_FORMAT = '%Y/%m/%d'
+NEW_POST_DATE_PATH_FORMAT = '%Y/%m/%d'
 
 # If this is set to True, the DEFAULT_LANG version will be displayed for
 # untranslated posts.
@@ -378,12 +380,12 @@ COMPILERS = {
 # SHOW_UNTRANSLATED_POSTS = Trueings from 'listings' into 'output/listings'
 
 # A mapping of languages to file-extensions that represent that language.
-# Feel free to add or delete 
+# Feel free to add or delete
 
 # Nikola supports logo display.  If you have one, you can put the URL here.
 # Final output is <img src="LOGO_URL" id="logo" alt="BLOG_TITLE">.
 # The URL may be relative to the site root.
-# LOGO_URL = ''
+#LOGO_URL = ' '
 
 # When linking posts to social media, Nikola provides Open Graph metadata
 # which is used to show a nice preview. This includes an image preview
@@ -1151,11 +1153,14 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code',
 # Default is {} (no config at all)
 # MARKDOWN_EXTENSION_CONFIGS = {}
 
+# ---------------------------------------------------------------------------- #
+# ------------------------------ PANDOC OPTIONS! ----------------------------- #
+# ---------------------------------------------------------------------------- #
 
 # Extra options to pass to the pandoc command, empty by default.
 # It can be a list of strings or a dict (keys are file extensions).
 # Example for a list of strings (used for all extensions):
-# PANDOC_OPTIONS = ['-F', 'pandoc-citeproc', '--bibliography=/Users/foo/references.bib']
+PANDOC_OPTIONS = ['--citeproc', '--bibliography=files/references/ref.bib']
 # Example for a dict, where the keys are the extensions in COMPILERS['pandoc']:
 # COMPILERS['pandoc'] = ['.rst', '.md', '.txt']
 # PANDOC_OPTIONS = {
@@ -1315,7 +1320,9 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code',
 
 # Map metadata from other formats to Nikola names.
 # Supported formats: yaml, toml, rest_docinfo, markdown_metadata
-# METADATA_MAPPING = {}
+METADATA_MAPPING = {
+    "markdown_metadata": {"summary": "description", "modified": "updated"}
+}
 #
 # Example for Pelican compatibility:
 # METADATA_MAPPING = {
