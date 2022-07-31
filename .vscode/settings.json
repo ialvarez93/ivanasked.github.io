@@ -8,5 +8,6 @@
         "latex",
         "plaintext",
         "restructuredtext"
-    ]
+    ],
+    "esbonio.sphinx.confDir": ""
 }
