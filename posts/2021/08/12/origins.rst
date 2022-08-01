@@ -15,7 +15,7 @@
 Why a blog?
 ###########
 
-Well, as the saying goes, “the shoemaker’s son always goes barefoot”. `Learning in public <https://www.swyx.io/learn-in-public/>`_ It's not only much more effective and efficient, but with the added benefit of accountability and the possibility of contributing to a community `it's a healthy choice <https://hackernoon.com/the-importance-of-developer-communities-adv3u0u>`_. But you need a platform for that and since I really want to be focused, SNS are out of the map (between you and me, dev.to gives me FOMO every 5 minutes, makes me really anxious, or both!) So I had to borrow and use the tools to make my humble space in this little corner over here.  
+Well, as the saying goes, “the shoemaker's son always goes barefoot”. `Learning in public <https://www.swyx.io/learn-in-public/>`_ It's not only much more effective and efficient, but with the added benefit of accountability and the possibility of contributing to a community `it's a healthy choice <https://hackernoon.com/the-importance-of-developer-communities-adv3u0u>`_. But you need a platform for that and since I really want to be focused, SNS are out of the map (between you and me, dev.to gives me FOMO every 5 minutes, makes me really anxious, or both!) So I had to borrow and use the tools to make my humble space in this little corner over here.  
 
 What are the requirements? 
 ***************************

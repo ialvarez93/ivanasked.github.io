@@ -26,7 +26,7 @@ SITE_URL = "https://ivanasked.github.io/"
 # BASE_URL = "https://ivanasked.github.io/"
 BLOG_EMAIL = "ivanasked@gmail.com"
 # (translatable)
-BLOG_DESCRIPTION = "Hi! I'm Ivan and this are questions I got about education and life in general as an Information Engineer."
+BLOG_DESCRIPTION = "Hi! I got questions about education and life in general. I use code to answer them as an Information Engineer."
 
 # Nikola is multilingual!
 #
@@ -143,8 +143,8 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/archive.html", "Questions"),
         ("/categories/", "Tags"),
-        ("/rss.xml", "RSS"),
-        ("/pages/about/index.html", "About me"),
+        ("/pages/about/index.html", "About"),
+        ("/rss.xml", "| RSS"),
         # ('https://getnikola.com', 'About me', 'fa fa-user'),
         # ('https://twitter.com/getnikola', 'My Twitter', 'fa fa-twitter'),
         # ('https://github.com/getnikola', 'My Github', 'fa fa-github'),
@@ -153,7 +153,7 @@ NAVIGATION_LINKS = {
     "es": (
         ("/es/archive.html", "Preguntas"),
         ("/es/categories/", "Etiquetas"),
-        ("/es/rss.xml", "RSS"),
+        ("/es/rss.xml", "| RSS"),
     ),
 }
 
