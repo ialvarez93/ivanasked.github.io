@@ -17,7 +17,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Ivan Alvarez"  # (translatable)
-BLOG_TITLE = {"en": "Ivan Asked", "es": "Ivan Prenguntó"}  # (translatable)
+BLOG_TITLE = {"en": "Ivan Asked...", "es": "Ivan Prenguntó...","de": "Ivan Fragte..."}  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://ivanasked.github.io/"
@@ -26,7 +26,7 @@ SITE_URL = "https://ivanasked.github.io/"
 # BASE_URL = "https://ivanasked.github.io/"
 BLOG_EMAIL = "ivanasked@gmail.com"
 # (translatable)
-BLOG_DESCRIPTION = "Hello there! I'm Ivan and this are question I got about education and life in general as an Information Engineer."
+BLOG_DESCRIPTION = "Hi! I'm Ivan and this are questions I got about education and life in general as an Information Engineer."
 
 # Nikola is multilingual!
 #
@@ -100,7 +100,8 @@ DEFAULT_LANG = "en"
 # the path will be used as a prefix for the generated pages location
 TRANSLATIONS = {
     DEFAULT_LANG: "",
-    "es": "./es"    
+    "es": "./es",
+    "de": "./de"
 }
 
 # What will translated input files be named like?
@@ -142,8 +143,8 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/archive.html", "Questions"),
         ("/categories/", "Tags"),
-        ("/pages/about/index.html", "About"),
         ("/rss.xml", "RSS"),
+        ("/pages/about/index.html", "About me"),
         # ('https://getnikola.com', 'About me', 'fa fa-user'),
         # ('https://twitter.com/getnikola', 'My Twitter', 'fa fa-twitter'),
         # ('https://github.com/getnikola', 'My Github', 'fa fa-github'),
@@ -166,51 +167,12 @@ NAVIGATION_ALT_LINKS = {
 # Name of the theme to use.
 THEME = "hack"
 
-# A theme color. In default themes, it might be displayed by some browsers as
-# the browser UI color (eg. Chrome on Android). Other themes might also use it
-# as an accent color (the default ones don’t). Must be a HEX value.
-# THEME_COLOR = '#5670d4'
-
-# Theme configuration. Fully theme-dependent. (translatable)
-# Samples for bootblog4 (enabled) and bootstrap4 (commented) follow.
-# bootblog4 supports: featured_large featured_small featured_on_mobile
-#                     featured_large_image_on_mobile featured_strip_html sidebar
-# bootstrap4 supports: navbar_light (defaults to False)
-#                      navbar_custom_bg (defaults to '')
-
-# Config for bootblog4:
 THEME_CONFIG = {
     DEFAULT_LANG: {
-        # "hyde_subtheme": "theme-custom",
-        # "hyde_subtheme": "theme-base-08", # red
-        # "hyde_subtheme": "theme-base-09", # orange
-        # "hyde_subtheme": "theme-base-0a", # yellow
-        # "hyde_subtheme": "theme-base-0b",  # green
-        # "hyde_subtheme": "theme-base-0c", # cyan
-        # "hyde_subtheme": "theme-base-0d", # blue
-        # "hyde_subtheme": "theme-base-0e", # magenta
-        # "hyde_subtheme": "theme-base-0f",  # brown
-        # show title and description
-        # "sidebar_title": True,
-        # show navigation links as icon or text
-        # leave commented to show both
-        # "navigation": "text",
-        # "navigation": "icon",
+
     }
 }
 
-# Config for bootstrap4:
-# THEME_CONFIG = {
-#     DEFAULT_LANG: {
-#         # Use a light navbar with dark text. Defaults to False.
-#         'navbar_light': False,
-#         # Use a custom navbar color. If unset, 'navbar_light' sets text +
-#         # background color. If set, navbar_light controls only background
-#         # color. Supported values: bg-dark, bg-light, bg-primary, bg-secondary,
-#         # bg-success, bg-danger, bg-warning, bg-info, bg-white, bg-transparent.
-#         'navbar_custom_bg': '',
-#     }
-# }
 
 # POSTS and PAGES contains (wildcard, destination, template) tuples.
 # (translatable)
@@ -330,7 +292,7 @@ DATE_FANCINESS = 2
 # 'html' assumes the file is HTML and just copies it
 COMPILERS = {
     "rest": ['.rst', '.txt'],
-    #"markdown": ['.md', '.mdown', '.markdown'],
+    # "markdown": ['.md', '.mdown', '.markdown'],
     "textile": ['.textile'],
     "txt2tags": ['.t2t'],
     "bbcode": ['.bb'],
@@ -340,7 +302,7 @@ COMPILERS = {
     # PHP files are rendered the usual way (i.e. with the full templates).
     # The resulting files have .php extensions, making it possible to run
     # them without reconfiguring your server to recognize them.
-    #"php": ['.php'],
+    # "php": ['.php'],
     # Pandoc detects the input from the source filename
     # but is disabled by default as it would conflict
     # with many of the others.
@@ -385,7 +347,7 @@ NEW_POST_DATE_PATH_FORMAT = '%Y/%m/%d'
 # Nikola supports logo display.  If you have one, you can put the URL here.
 # Final output is <img src="LOGO_URL" id="logo" alt="BLOG_TITLE">.
 # The URL may be relative to the site root.
-#LOGO_URL = ' '
+LOGO_URL = './images/logotype.svg'
 
 # When linking posts to social media, Nikola provides Open Graph metadata
 # which is used to show a nice preview. This includes an image preview
@@ -399,7 +361,7 @@ NEW_POST_DATE_PATH_FORMAT = '%Y/%m/%d'
 # already contains the text), set this to False.
 # Note: if your logo is a SVG image, and you set SHOW_BLOG_TITLE = False,
 # you should explicitly set a height for #logo in CSS.
-# SHOW_BLOG_TITLE = True
+SHOW_BLOG_TITLE = False
 
 # Paths for different autogenerated bits. These are combined with the
 # translation paths.
@@ -1369,7 +1331,7 @@ METADATA_MAPPING = {
 # Bundle JS and CSS into single files to make site loading faster in a HTTP/1.1
 # environment but is not recommended for HTTP/2.0 when caching is used.
 # Defaults to True.
-# USE_BUNDLES = True
+USE_BUNDLES = False
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
@@ -1434,7 +1396,9 @@ GLOBAL_CONTEXT = {
     'utterances_config': {"issue-term": "title", "label": "Comments", "theme": "github-light", "crossorigin": "anonymous"}
 }
 
+
 GLOBAL_CONTEXT['HACK_VARIANT'] = 'standard'
+
 
 # Add functions here and they will be called with template
 # GLOBAL_CONTEXT as parameter when the template is about to be
