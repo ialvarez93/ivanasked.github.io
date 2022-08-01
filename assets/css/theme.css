@@ -27,18 +27,27 @@
 */
 
 body {
-	color: #4F5151;
-	font-family: 'Share Tech Mono', monospace;
+	color: #5e5e5e;
+	font-family: "Share Tech";
+	text-align: justify;
 	font-size: 20px;
 	line-height: 1.4;
 	padding: 1em;
 }
 
-
-
-.code, .hack, .hack blockquote, .hack code, .hack em, .hack h1, .hack h2, .hack h3, .hack h4, .hack h5, .hack h6, .hack strong
-{
-	font-family: 'Share Tech Mono', monospace;
+.code,
+.hack,
+.hack blockquote,
+.hack code,
+.hack em,
+.hack h1,
+.hack h2,
+.hack h3,
+.hack h4,
+.hack h5,
+.hack h6,
+.hack strong {
+	font-family: "Share Tech Mono", monospace;
 }
 
 #container {
@@ -82,8 +91,8 @@ body {
 }
 
 #toptranslations {
-	text-align: right;
-	float: right;
+	text-align: center;
+	float: none;
 }
 
 #toptranslations:dir(rtl) {
@@ -105,23 +114,23 @@ body {
 }
 
 .postindex article {
-	border-bottom: 1px solid #4F5151;
+	border-bottom: 1px solid #4f5151;
 	padding-bottom: 1em;
 }
 #header {
-	border-bottom: 1px solid #4F5151;
+	border-bottom: 1px solid #4f5151;
 }
 #footer {
-	border-top: 1px solid #4F5151;
+	border-top: 1px solid #4f5151;
 	text-align: center;
 }
 
 /* Tags */
 .postpromonav {
-	border-bottom: 1px solid #4F5151;
-	border-top: 1px solid #4F5151;
+	border-bottom: 1px solid #4f5151;
+	border-top: 1px solid #4f5151;
 	margin-top: 1em;
-	padding: .5em 0;
+	padding: 0.5em 0;
 }
 .postpromonav .tags {
 	text-align: center;
@@ -132,7 +141,7 @@ body {
 	content: " — ";
 }
 .postlist li {
-	margin-bottom: .33em;
+	margin-bottom: 0.33em;
 }
 
 /* Post and archive pagers */
@@ -174,7 +183,7 @@ body {
 	display: inline-block;
 }
 .archivenav .pager {
-	text-align: center
+	text-align: center;
 }
 .postpromonav .pager .next,
 .archivenav .pager .next {
@@ -197,8 +206,8 @@ body {
 .archivenav .pager .disabled,
 .archivenav .pager .disabled a,
 .archivenav .pager .disabled:link {
-    color: #888;
-    cursor: not-allowed;
+	color: #888;
+	cursor: not-allowed;
 }
 
 .metadata p {
@@ -211,18 +220,24 @@ body {
 	text-align: center;
 }
 
+#logo {
+	width: 100%;
+	height: auto;
+}
+
 /* Links */
 :link {
 	color: #333333;
 	text-decoration: none;
-    border-bottom: 0px none green
+	border-bottom: 0px none green;
 }
 :visited {
-	color: #88807C;
-    border-bottom: 0px none green
+	color: #a0a0a0;
+	border-bottom: 0px none green;
 }
-:link:hover, :visited:hover {
-	color: #C4A000;
+:link:hover,
+:visited:hover {
+	color: #030303;
 }
 
 #brand :link,
@@ -262,12 +277,12 @@ img {
 }
 
 .breadcrumb > li:after {
-	content: ' / ';
+	content: " / ";
 	color: #888;
 }
 
 .breadcrumb > li:last-of-type:after {
-	content: '';
+	content: "";
 	margin-left: 0;
 }
 
@@ -310,7 +325,8 @@ img {
 	clip: auto;
 }
 
-pre.code, code {
+pre.code,
+code {
 	white-space: pre;
 	word-wrap: normal;
 	overflow: auto;
@@ -418,4 +434,3 @@ pre.code, code {
 		padding: 0;
 	}
 }
-
