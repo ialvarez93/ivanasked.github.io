@@ -15,7 +15,7 @@
  </url>
  <url>
   <loc>https://ivanasked.github.io/archive.html</loc>
-  <lastmod>2022-08-01T02:55:00Z</lastmod>
+  <lastmod>2022-08-01T06:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://ivanasked.github.io/categories/</loc>
@@ -43,7 +43,7 @@
  </url>
  <url>
   <loc>https://ivanasked.github.io/de/archive.html</loc>
-  <lastmod>2022-08-01T02:55:00Z</lastmod>
+  <lastmod>2022-08-01T06:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://ivanasked.github.io/de/categories/</loc>
@@ -75,9 +75,13 @@
   <xhtml:link rel="alternate" hreflang="en" href="https://ivanasked.github.io/pages/about/" />
  </url>
  <url>
+  <loc>https://ivanasked.github.io/de/posts/2021/08/12/origins/</loc>
+  <lastmod>2022-08-01T06:38:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://ivanasked.github.io/posts/2021/08/12/origins/" />
+ </url>
+ <url>
   <loc>https://ivanasked.github.io/de/posts/origins/</loc>
   <lastmod>2022-08-01T02:55:00Z</lastmod>
-  <xhtml:link rel="alternate" hreflang="en" href="https://ivanasked.github.io/posts/origins/" />
  </url>
  <url>
   <loc>https://ivanasked.github.io/es/</loc>
@@ -89,7 +93,7 @@
  </url>
  <url>
   <loc>https://ivanasked.github.io/es/archive.html</loc>
-  <lastmod>2022-08-01T02:55:00Z</lastmod>
+  <lastmod>2022-08-01T06:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://ivanasked.github.io/es/categories/</loc>
@@ -121,9 +125,13 @@
   <xhtml:link rel="alternate" hreflang="en" href="https://ivanasked.github.io/pages/about/" />
  </url>
  <url>
+  <loc>https://ivanasked.github.io/es/posts/2021/08/12/origins/</loc>
+  <lastmod>2022-08-01T06:38:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://ivanasked.github.io/posts/2021/08/12/origins/" />
+ </url>
+ <url>
   <loc>https://ivanasked.github.io/es/posts/origins/</loc>
   <lastmod>2022-08-01T02:55:00Z</lastmod>
-  <xhtml:link rel="alternate" hreflang="en" href="https://ivanasked.github.io/posts/origins/" />
  </url>
  <url>
   <loc>https://ivanasked.github.io/galleries/</loc>
@@ -139,11 +147,15 @@
  </url>
  <url>
   <loc>https://ivanasked.github.io/listings/hello.py.html</loc>
-  <lastmod>2022-08-01T02:55:00Z</lastmod>
+  <lastmod>2022-08-01T06:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://ivanasked.github.io/pages/about/</loc>
   <lastmod>2022-08-01T02:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ivanasked.github.io/posts/2021/08/12/origins/</loc>
+  <lastmod>2022-08-01T06:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://ivanasked.github.io/posts/origins/</loc>
